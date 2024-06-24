@@ -8,28 +8,27 @@ def page_summary_body():
 
     st.info(
         f"**General Information**\n"
-        f"* Malaria is a parasitic infection transmitted by the bite of infected female "
-        f"Anopheles mosquitoes.\n"
-        f"* A blood smear sample is collected, mixed with a reagent and examined in "
-        f"the microscope. Visual criteria are used to detect malaria parasites.\n"
-        f"* According to [WHO](https://www.who.int/news-room/fact-sheets/detail/malaria), "
-        f"in 2019, there were an estimated  229 million cases of malaria worldwide and an "
-        f"estimated 409 thousand deaths due to this disease. "
-        f"Children <5 years are the most vulnerable group, accounting for 67% (274 thousand) "
-        f"of all malaria deaths worldwide in 2019.\n\n"
+        f"* Powdery mildew is a fungal infection of cherry trees caused by the fungus "
+        f"Podosphaera clandestina."
+        f"* The fungus causes visual changes in the leaves that can be observed with "
+        f"the naked eye. These visual changes can be used to detect powdery mildew.\n"
+        f"* Within the cherry industry this fungus is extremely destructive, if not caught and treated "
+        f"it can have a severe impact on the crop yield, and by extention income, as such a cheap "
+        f"and easy way to check images is a much needed solution. "
+        f"If the initial analysis returns a positive result, the farmers can then move with further DNA based testing, "
+        f"and treatment, minimisng loses.\n\n"
         f"**Project Dataset**\n"
-        f"* The available dataset contains 5643 out of +27 thousand images taken from "
-        f"blood smear workflow (when a drop of blood is taken on a glass slide) of "
-        f"malaria-parasitised and uninfected cells.")
+        f"* The dataset contains two folders of images each containing 2104 images, one folder is clean, "
+        f"uninfected leaves, the other is leaves with visable powdery mildew on them. ")
 
     st.write(
-        f"* For additional information, please visit and **read** the "
-        f"[Project README file](https://github.com/Code-Institute-Solutions/WalkthroughProject01/blob/main/README.md).")
+        f"* For more in depth information, you can check out the associated "
+        f"[README](https://github.com/Swewi/milestone-project-mildew-detection-in-cherry-leaves/blob/main/README.md) file.")
     
 
     st.success(
         f"The project has 2 business requirements:\n"
-        f"* 1 - The client is interested in having a study to differentiate "
-        f"a parasitized and uninfected cell visually.\n"
-        f"* 2 - The client is interested in telling whether a given cell contains a malaria parasite or not. "
+        f"* 1 - The client is interested in conducting a study to visually differentiate a cherry leaf that is healthy "
+        f"from one that contains powdery mildew.\n"
+        f"* 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew. "
         )
