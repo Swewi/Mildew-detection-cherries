@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 def page_project_hypothesis_body():
-    st.write("### Project Hypothesis and Validation")
+    st.write("### Hypothesis and Validation")
 
     st.success(
         f"* We suspect malaria-parasitised cells have clear marks/signs, "
