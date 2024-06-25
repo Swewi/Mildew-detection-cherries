@@ -10,7 +10,7 @@ from src.machine_learning.predictive_analysis import (
                                                     plot_predictions_probabilities
                                                     )
 
-def page_cherry_leaf_visualiser_body():
+def page_mildew_detector_body():
     st.info(
         f"* The client is interested in determining whether a given leaf is infected with powdery mildew."
         )
