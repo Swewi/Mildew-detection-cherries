@@ -12,8 +12,19 @@ import random
 def page_cherry_leaf_visualiser_body():
     st.write("### Powdery mildew detector")
     st.info(
-        f"* The client is interested in having a study that visually "
+        f"* The client is interested in conducting a study that visually "
         f"differentiates between infected and non-infected leaves.")
+
+    st.write(
+        f"* For more in depth information, you can check out the associated "
+        f"[README](https://github.com/Swewi/milestone-project-mildew-detection-in-cherry-leaves/blob/main/README.md) file.")
+
+    st.success(
+        f"* The fungal infection called 'Powdery Mildew' is of concern within the cherry industry "
+        f"because it spreads within an orchard very quickly and easily. "
+        f"As a consequence of this the client requires a quick way of diagnosing infected trees to "
+        f"minimise damage."
+    )
     
     version = 'v1'
     if st.checkbox("Difference between average and variability image"):
@@ -22,14 +33,14 @@ def page_cherry_leaf_visualiser_body():
       avg_healthy = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
 
       st.warning(
-        f"* We observed that the average and variability in the images did not reveal "
+        f"* We observed that the average and variability in the images does not reveal "
         f"any clear patterns that would allow us to intuitively differentiate between "
-        f"infected and non-infected leaves."
+        f"infected and non-infected leaves. "
         f"However, the infected leaves do have a greater abundance of white lines "
         f"covering the visable surface.")
 
-      st.image(avg_powdery_mildew, caption='Powdery Mildew Infected - Average and Variability')
-      st.image(avg_healthy, caption='Uninfected Leaf - Average and Variability')
+      st.image(avg_powdery_mildew, caption='Uninfected Leaf - Average and Variability')
+      st.image(avg_healthy, caption='Powdery Mildew Infected - Average and Variability')
       st.write("---")
 
     if st.checkbox("Differences between average infected and average uninfected leaves"):

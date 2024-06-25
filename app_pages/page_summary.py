@@ -9,17 +9,17 @@ def page_summary_body():
     st.info(
         f"**General Information**\n"
         f"* Powdery mildew is a fungal infection of cherry trees caused by the fungus "
-        f"Podosphaera clandestina."
+        f"Podosphaera clandestina.\n"
         f"* The fungus causes visual changes in the leaves that can be observed with "
         f"the naked eye. These visual changes can be used to detect powdery mildew.\n"
         f"* Within the cherry industry this fungus is extremely destructive, if not caught and treated "
         f"it can have a severe impact on the crop yield, and by extention income, as such a cheap "
         f"and easy way to check images is a much needed solution. "
-        f"If the initial analysis returns a positive result, the farmers can then move with further DNA based testing, "
-        f"and treatment, minimisng loses.\n\n"
+        f"If the initial visual analysis returns a positive result, the farmers can then move forwards with "
+        f"further DNA based testing, and treatment, minimisng losses.\n\n"
         f"**Project Dataset**\n"
-        f"* The dataset contains two folders of images each containing 2104 images, one folder is clean, "
-        f"uninfected leaves, the other is leaves with visable powdery mildew on them. ")
+        f"* The dataset contains two folders of images each containing 2104 images, one folder has clean, "
+        f"uninfected leaves, the other has leaves with visable powdery mildew present. ")
 
     st.write(
         f"* For more in depth information, you can check out the associated "
@@ -29,6 +29,6 @@ def page_summary_body():
     st.success(
         f"The project has 2 business requirements:\n"
         f"* 1 - The client is interested in conducting a study to visually differentiate a cherry leaf that is healthy "
-        f"from one that contains powdery mildew.\n"
-        f"* 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew. "
+        f"from one that is infected with powdery mildew.\n"
+        f"* 2 - The client is interested in predicting if a cherry leaf is healthy or infected. "
         )
