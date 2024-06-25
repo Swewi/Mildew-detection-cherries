@@ -18,8 +18,8 @@ def page_cherry_leaf_visualiser_body():
     version = 'v1'
     if st.checkbox("Difference between average and variability image"):
       
-      avg_parasitized = plt.imread(f"outputs/{version}/avg_var_healthy.png")
-      avg_uninfected = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
+      avg_powdery_mildew = plt.imread(f"outputs/{version}/avg_var_healthy.png")
+      avg_healthy = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
 
       st.warning(
         f"* We observed that the average and variability in the images did not reveal "

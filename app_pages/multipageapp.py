@@ -10,18 +10,13 @@ class MultiPage:
 
         st.set_page_config(
             page_title=self.app_name,
-            page_icon="🍃")
+            page_icon="🍒")  # You may add an icon, to personalize your App
+        
 
     def add_page(self, title, func) -> None:
         self.pages.append({"title": title, "function": func})
 
     def run(self):
         st.title(self.app_name)
-    
-    # Create tabs
-        tabs = st.tabs([page['title'] for page in self.pages])
-    
-    # Loop through tabs and pages
-        for tab, page in zip(tabs, self.pages):
-            with tab:
-                page['function']()
+        page = st.sidebar.radio('Menu', self.pages, format_func=lambda page: page['title'])
+        page['function']()
