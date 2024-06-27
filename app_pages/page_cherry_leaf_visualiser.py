@@ -22,8 +22,8 @@ def page_cherry_leaf_visualiser_body():
     st.success(
         f"* The fungal infection called 'Powdery Mildew' is of concern within the cherry industry "
         f"because it spreads within an orchard very quickly and easily. "
-        f"As a consequence of this the client requires a quick way of diagnosing infected trees to "
-        f"minimise damage."
+        f"As a consequence of this the client requires a quick way of identifying infected trees to "
+        f"minimise infection."
     )
     
     version = 'v1'
