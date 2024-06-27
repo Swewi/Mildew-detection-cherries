@@ -37,5 +37,15 @@ def page_ml_performance_metrics():
     st.image(model_loss_acc, caption='Model Loss and Accuracy')
     st.write("---")
 
+    st.write("### Confusion Matrix")
+    confusion_matrix = plt.imread(f"outputs/{version}/confusion_matrix.png")
+    st.image(confusion_matrix, caption='Confusion Matrix')
+    st.write("---")
+
+    st.write("")
+    classification_report_heatmap = plt.imread(f"outputs/{version}/classification_report_heatmap.png")
+    st.image(classification_report_heatmap, caption='Classification Report')
+    st.write("---")
+
     st.write("### Generalised Performance on Test Set")
     st.dataframe(pd.DataFrame(load_test_evaluation(version), index=['Loss', 'Accuracy']))
