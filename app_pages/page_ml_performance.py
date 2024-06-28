@@ -85,7 +85,7 @@ def page_ml_performance_metrics():
         f"perfect fit."
     )
     st.warning(
-        f"There is no such thing as a perfect fit, therefore this model will need further "
-        f"data to truely test the model."
+        f"The model has achieved an excellent f1 score of 1. However, continuous "
+        f"testing with more data is essential to ensure its robustness and generalizability."
     )
     st.dataframe(pd.DataFrame(load_test_evaluation(version), index=['Loss', 'Accuracy']))
