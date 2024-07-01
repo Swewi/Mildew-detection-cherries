@@ -53,13 +53,46 @@ The data used for this project is a collection of cherry leaf images provided by
 
 ![Screenshot of the report field on visualiser page](readme_images/report%20from%20test%20images.png)
 
-## ML Business Case
+## Machine Learning Business Case
 
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+* We aim to develop a machine learning model to predict whether a leaf is infected with powdery mildew using an image database provided by the client. This problem falls under supervised learning and involves building a binary (two-class), single-label, classification model.
+* Our ideal outcome is to provide the clients a more reliable, faster, and cost effective product for powdery mildew detection.
+* The model success metrics are:
+  * Accuracy of 97% or above on the test set.
+* The model will indicate if a leaf has powdery mildew and provide the probability of infection. Staff can take pictures of leaves and upload them directly to the app, the images will then be analysed and a prediction report created that can be acted upon immediately.
 
-## Dashboard Design
+![Screenshot of sample output from powdery mildew visualiser](readme_images/visulaiser_output.jpg)
 
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
+* The current detection method relies on manual inspection. Currently staff spend around 30 minutes per tree, taking a number of samples and visually checking if they are healthy or infected. The current method is slow and prone to inaccuracies due to human error.
+* The training data used for the model came from the leaves database provided by client and uploaded on Kaggle. This dataset contains 4208 images of cherry leaves, split evenly between healthy and infected.
+
+## Dashboard Design - Streamlit app
+
+### Page 1 - Project Summary
+
+* Contains several sections covering a quick overview of the apps purpose:
+  * **General Information** very brief overview of the reasoning behond this project.
+  * **Project Dataset** description of the dataset as sourced from kaggle.
+* A link to the Readme
+
+### Page 2 - Cherry Leaf Mildew Detector
+
+* Contains several sections covering the visualiser page:
+  * Two small paragraphs with page information.
+  * A link to the Readme
+  * Three checkbox options that display different information:
+    * Including the following overview images
+
+![Screenshot of the healthy images overview](readme_images/healthy.jpg)
+
+![Screenshot of the infected images overview](readme_images/infected.jpg)
+
+* Differences between the datasets
+
+![Screenshoot of the differences between the datasets](readme_images/differences.jpg)
+
+* An image montage compiler of either healthy or infected leaves depending on the selection.
+
 * Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
 
 ## Unfixed Bugs
@@ -68,7 +101,7 @@ The data used for this project is a collection of cherry leaf images provided by
 
 ## Deployment - Using Github and Heroku
 
-## Cloning the Repository
+### Cloning the Repository
 
 * On Github navigate to the repository "<https://github.com/Swewi/milestone-project-mildew-detection-in-cherry-leaves/tree/main>"
 * Click "Code" drop down menu - a green button shown right above the file list.
@@ -81,7 +114,7 @@ The data used for this project is a collection of cherry leaf images provided by
 * For more details on how to clone the repository in order to create a copy for own use refer to the site:
 [Cloning a Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
-## Forking a Repository
+### Forking a Repository
 
 * On Github navigate to the repository "<https://github.com/Swewi/milestone-project-mildew-detection-in-cherry-leaves/tree/main>"
 * Click "Fork" located towards top right corner on GitHub page.
@@ -89,14 +122,14 @@ The data used for this project is a collection of cherry leaf images provided by
 * It will create forked repo under the same name as original by default. But you can type a name in "Repository name" or add a description in "Description" box.
 * Click on "Create fork". A forked repo is created.
 
-### Important Information about forking a repository
+#### Important Information about forking a repository
 
 * Forking allows you to make any changes without affecting original project. You can send the the suggestions by submitting a pull request. Then the Project Owner can review the pull request before accepting the suggestions and merging them.
 * When you have fork to a repository, you don't have access to files locally on your device, for getting access you will need to clone the forked repository.
 * For more details on how to fork the repo, in order to for example suggest any changes to the project you can:
 [Forking a Repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 
-## Deploying the app - Heroku
+### Deploying the app - Heroku
 
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 
@@ -121,7 +154,7 @@ The data used for this project is a collection of cherry leaf images provided by
   * You can now click to view the app ready and running.
   * If the slug size is too large, then add large files not required for the app to run to the .slugignore file.
 
-### Important Information about forking a repository - Heorku
+#### Important Information about forking a repository - Heorku
 
 * The web application is displayed and deployed using template provided by Code Institute to test the code.
 * For this project I used Manual deployment method to deploy the current state of the branch, every time I pushed the code from Gitpod.
@@ -139,14 +172,16 @@ The data used for this project is a collection of cherry leaf images provided by
 
 ### Content
 
-* The text for the Home page was taken from Wikipedia Article A.
-* Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-* The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+* https://plantwiseplusknowledgebank.org/doi/full/10.1079/pwkb.species.42639
+* https://www.canr.msu.edu/ipm/diseases/powdery_mildew_of_cherry?language_id=
+* https://www.wildfooduk.com/wild-plants/wild-cherry/
+* https://attra.ncat.org/publication/cherry-diseases/
+* https://extension.usu.edu/planthealth/ipm/notes_ag/fruit-powdery-mildew
 
 ### Media
 
 ' The photos used on the home and sign-up page are from This Open-Source site.
-' The images used for the gallery page were taken from this other open-source site.
+' [The images used for testing visualiser were taken from this site.](https://www.wildfooduk.com/wild-plants/wild-cherry/)
 
 ## Acknowledgements
 
