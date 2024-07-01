@@ -25,7 +25,7 @@ def page_ml_performance_metrics():
         f"unseen data, ensuring that it performs reliably on new, real-world inputs."
     )
     st.success(
-        f" The following series of images displays how the model utilized the training "
+        f" The following series of images displays how the model utilised the training "
         f"and validation datasets to improve its ability to predict whether an uploaded "
         f"image shows a healthy leaf or one infected with powdery mildew."
     )

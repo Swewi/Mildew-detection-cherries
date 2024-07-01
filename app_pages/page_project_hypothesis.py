@@ -9,7 +9,7 @@ def page_project_hypothesis_body():
         f"* **Hypothesis 1** - That infected cherry leaves will have clear visual signs "
         f"of infection across the surface of a leaf, that will differentiate them from "
         f"healthy leaves. \n\n"
-        )
+    )
     
     st.info(
         f"* Visually a healthy cherry leaf is a uniform rich green colour, it has a tapered, "
@@ -44,3 +44,7 @@ def page_project_hypothesis_body():
         f"* This indicates that the model was not misled by the visual complexity of the infected "
         f"leaves but instead captured the underlying patterns necessary for accurate classification. \n\n"
     )
+
+    st.write(
+        f"* For more in depth information, you can check out the associated "
+        f"[README](https://github.com/Swewi/milestone-project-mildew-detection-in-cherry-leaves/blob/main/README.md) file.")

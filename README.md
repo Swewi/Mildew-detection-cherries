@@ -61,8 +61,6 @@ The data used for this project is a collection of cherry leaf images provided by
   * Accuracy of 97% or above on the test set.
 * The model will indicate if a leaf has powdery mildew and provide the probability of infection. Staff can take pictures of leaves and upload them directly to the app, the images will then be analysed and a prediction report created that can be acted upon immediately.
 
-![Screenshot of sample output from powdery mildew visualiser](readme_images/visulaiser_output.jpg)
-
 * The current detection method relies on manual inspection. Currently staff spend around 30 minutes per tree, taking a number of samples and visually checking if they are healthy or infected. The current method is slow and prone to inaccuracies due to human error.
 * The training data used for the model came from the leaves database provided by client and uploaded on Kaggle. This dataset contains 4208 images of cherry leaves, split evenly between healthy and infected.
 
@@ -75,7 +73,7 @@ The data used for this project is a collection of cherry leaf images provided by
   * **Project Dataset** description of the dataset as sourced from kaggle.
 * A link to the Readme
 
-### Page 2 - Cherry Leaf Mildew Detector
+### Page 2 - Cherry Leaf Visualiser
 
 * Contains several sections covering the visualiser page:
   * Two small paragraphs with page information.
@@ -93,9 +91,64 @@ The data used for this project is a collection of cherry leaf images provided by
 
 * An image montage compiler of either healthy or infected leaves depending on the selection.
 
-* Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+### Page 3 - Cherry Leaf Mildew Detector
 
-## Unfixed Bugs
+* The simplest page with respect to content:
+  * A sentence relavent to the page.
+  * A link to the dataset that can be downloaded for testing
+  * A link to the Readme
+  * A widget for uploading images:
+    * It explains size restrictions
+    * Suitable image formats
+    * And a browse button
+* This is a sample of the output from the detector:
+
+![Screenshot of sample output from powdery mildew visualiser](readme_images/visulaiser_output.jpg)
+
+You can see at the bottom of the image a download link, this will download a CSV file that can be viewed in spreadsheet program like [Google Sheets](https://docs.google.com/spreadsheets/u/0/).
+
+### Page 4 - Project Hypothesis
+
+* Sections for each hypothesis including a statement, explanation, and conclusion.
+* A link to the Readme.
+
+### Page 5 - Machine Learning Performance
+
+* This page is the page of nuts and bolts, I have done my best to keep it layman friendly it includes an overview of the data and an overview of the machine learning output.
+  * The first section is about the dataset breakdown:
+    * Initially I had included a bar chart of the distribution of data by set and label, however I changed this because I felt piecharts would represent the data better. The piecharts are generally easier to read.
+  * The remainder of the page is about the model and ML:
+    * These infographics are exactly as I intended from the outset.
+      * Model performance  - Classification report
+      * Model accuracy - Confusion matrix
+      * Model History - Accuracy and Losses
+      * Model evaluation result on Test set
+
+## The process of Cross-industry standard process for data mining - CRISP-DM
+
+CRISP-DM (Cross-Industry Standard Process for Data Mining) is a widely used methodology that provides a structured approach to planning and executing data mining projects, consisting of six phases: business understanding, data understanding, data preparation, modeling, evaluation, and deployment. It helps ensure that data mining projects are systematic and results are reliable, making it adaptable to various industries and applications.
+
+**Further reading**: [Data Science Process Alliance - What is CRISP-DM](https://www.datascience-pm.com/crisp-dm-2/)
+
+A kanban board is an agile project management tool designed to help visualise work, limit work-in-progress, and maximise efficiency. It can help both agile and DevOps teams establish order in their daily work. Kanban boards use cards, columns, and continuous improvement to help technology and service teams commit to the right amount of work, and get it done!
+
+![Screenshot of Kanban details](readme_images/cherry_user.png)
+Kanban Board for current project.
+
+### Examples cards from the kanban board
+
+| ![Screenshot of Epics](readme_images/cherry_epics.png) | ![Screenshot of Todo](readme_images/cherry_todo.png) |
+|:-------------------------------------------:|:-------------------------------------------:|
+| Epics from the kanban                                    | Todo cards                                    |
+| ![Screenshot of In progress](readme_images/cherry_inprog.png) | ![Screenshot of Done](readme_images/cherry_done.png) |
+| In progress cards                                   | Completed cards                                    |
+
+In these images you can see the flow of work across the board.
+*There are user stories still in the 'Todo' section because these are beyond the scope of this project, but in the real world they would be part of the continuing build process.*
+
+## Bugs
+
+### Unfixed Bugs
 
 * You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 

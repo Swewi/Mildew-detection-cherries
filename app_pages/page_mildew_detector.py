@@ -20,6 +20,10 @@ def page_mildew_detector_body():
         f"prediction [here](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)."
         )
 
+    st.write(
+        f"* For more in depth information, you can check out the associated "
+        f"[README](https://github.com/Swewi/milestone-project-mildew-detection-in-cherry-leaves/blob/main/README.md) file.")
+
     st.write("---")
 
     images_buffer = st.file_uploader('Upload cherry leaf images. You may select more than one.',
