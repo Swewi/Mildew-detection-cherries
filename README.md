@@ -25,9 +25,6 @@ We have been approached to find a scalable, quick, and easy solution that remain
 
 The data used for this project is a collection of cherry leaf images provided by Farmy & Foods, taken from their orchards.
 
-* The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one infected with powdery mildew.
-* The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
-
 ## Hypothesis and how to validate?
 
 * That infected cherry leaves will have clear visual signs of infection across the surface of a leaf, that will differentiate them from healthy leaves.
@@ -38,9 +35,23 @@ The data used for this project is a collection of cherry leaf images provided by
 
   * Validation - The analysis of the Image Montage confirmed that the visual differences between infected and healthy leaves were subtle and not easily distinguishable using average and variability images alone. Despite this, the model demonstrated a perfect F1 score of 1.0, indicating that it successfully learned to identify the specific features distinguishing infected from healthy leaves, even when these features were not apparent in simple image comparisons. This indicates that the model was not misled by the visual complexity of the infected leaves but instead captured the underlying patterns necessary for accurate classification.
 
-## The rationale to map the business requirements to the Data Visualisations and ML tasks
+## Business Requirements
 
-* List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+* The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one infected with powdery mildew.
+  * Using streamlit to create a dashboard that is easy to navigate and intuitive, utilising an interactive sidebar:
+    * Contains a page "Cherry Leaf Visualaiser" that displays different diagonistic images depending on checkbox.
+    * An "average" and "variabiltiy" side by side for both healthy and infected leaves, these are similar to the `mean` and `standard deviation` if this was numerical instead of visual.
+    * A side by side of the averages of both healthy and infected images with the difference between them.
+    * A montage of random images based on the label for quick visual reference.
+
+* The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
+  * Using streamlit to create a dashboard that is easy to navigate and intuitive, utilising an interactive sidebar:
+    * Contains a page "Powdery Mildew Detector" that allows you to upload your own images to be tested.
+    * It will reject images that are too big or the wrong format, currently included formats in this app;
+      * jpg, jpeg, and png.
+    * It will output the image and a report that can be downloaded or screen captured with the information.
+
+![Screenshot of the report field on visualiser page](readme_images/report%20from%20test%20images.png)
 
 ## ML Business Case
 
