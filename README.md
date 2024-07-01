@@ -35,7 +35,7 @@ The data used for this project is a collection of cherry leaf images provided by
 
   * Validation - The analysis of the Image Montage confirmed that the visual differences between infected and healthy leaves were subtle and not easily distinguishable using average and variability images alone. Despite this, the model demonstrated a perfect F1 score of 1.0, indicating that it successfully learned to identify the specific features distinguishing infected from healthy leaves, even when these features were not apparent in simple image comparisons. This indicates that the model was not misled by the visual complexity of the infected leaves but instead captured the underlying patterns necessary for accurate classification.
 
-## Business Requirements
+## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
 * The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one infected with powdery mildew.
   * Using streamlit to create a dashboard that is easy to navigate and intuitive, utilising an interactive sidebar:
