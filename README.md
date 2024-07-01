@@ -146,11 +146,31 @@ Kanban Board for current project.
 In these images you can see the flow of work across the board.
 *There are user stories still in the 'Todo' section because these are beyond the scope of this project, but in the real world they would be part of the continuing build process.*
 
-## Bugs
+## Bugs and Testing
+
+### Fixed Bugs
+
+* No significant issues were encountered while doing this project, I have used Chat GPT to check my spelling and grammar.  I did encounter a few syntax errors but nothing serious or unfixable.
 
 ### Unfixed Bugs
 
-* You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+* The image below shows a false prediction result
+
+![Screenshot of false report image](readme_images/healthy_wrong.png)
+
+* **Bug Description:** The above image, despite looking healthy was predicted infected.
+* **Bug:** The sun shinning on the image has increased the saturation of pixels resulting in greater amounts of light/white pixels wrongly interpreted as powdery mildew infection. The background and foreground has very little contrast as a result the model could have struggled to differentiate the leaf shape correctly.
+* **Potential Fix:** The model needs further tuning on a more diverse set of data.
+
+### Testing
+
+In order to test the detector page I found several images on the internet and ran them through the detector widget.  The images I tested are displayed below, one is missing it the one that didn't return a 100% healthy response.
+
+| ![Screenshot healthy leaf correctly identified](readme_images/cherry_wild.jpg) | ![Screenshot healthy leaf incorrectly identified](readme_images/wild_sunny.jpg) |
+|:-------------------------------------------:|:-------------------------------------------:|
+| Healthy leaf correctly identified                                    | Healthy leaf incorrectly identified                                    |
+| ![Screenshot infected leaf correctly identified](readme_images/infect_under.jpg) | ![Screenshot infected leaf correctly identified](readme_images/Infect_cherry.jpg) |
+| Infected leaf correctly identified                                   | Infected leaf correctly identified                                    |
 
 ## Deployment - Using Github and Heroku
 
