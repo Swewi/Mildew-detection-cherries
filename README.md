@@ -158,8 +158,10 @@ In these images you can see the flow of work across the board.
 
 ![Screenshot of false report image](readme_images/healthy_wrong.png)
 
-* **Bug Description:** The above image, despite looking healthy was predicted infected.
-* **Bug:** The sun shinning on the image has increased the saturation of pixels resulting in greater amounts of light/white pixels wrongly interpreted as powdery mildew infection. The background and foreground has very little contrast as a result the model could have struggled to differentiate the leaf shape correctly.
+* **Issue:** The above image, despite looking healthy was predicted infected.
+* **Potential Causes:**
+  * The sun shining on the image has increased the saturation of pixels, resulting in greater amounts of light/white pixels being wrongly interpreted as powdery mildew infection.
+  * The background and foreground have very little contrast; as a result, the model could have struggled to differentiate the leaf shape correctly.
 * **Potential Fix:** The model needs further tuning on a more diverse set of data.
 
 ### Testing
@@ -232,32 +234,71 @@ In order to test the detector page I found several images on the internet and ra
 * The web application is displayed and deployed using template provided by Code Institute to test the code.
 * For this project I used Manual deployment method to deploy the current state of the branch, every time I pushed the code from Gitpod.
 
-* The App live link: `https://cherryleafinfect-4f02b3a49366.herokuapp.com/`
+* The App live link: [Link to live Streamlit app](https://cherryleafinfect-4f02b3a49366.herokuapp.com)
 
-## Main Data Analysis and Machine Learning Libraries
+## Technologies Used
 
-* Here, you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+### Languages
 
-## Credits
+* Python - The primary programming language used for data processing and machine learning tasks.
+* Markdown - Creating the readme and adding information to the Jupyter notebooks.
 
-* In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism.
-* You can break the credits section up into Content and Media, depending on what you have included in your project.
+### Platforms
+
+* Jupyter Notebooks - For development, experimentation, and visualization of code and results, inside Gitpod.
+* Gitpod - IDE to develop the website.
+* Github - To host the source code and a link to the live site.
+* Heroku - To deploy the live site.
+
+### Resources
+
+* Git to provide version control (to commit and push code to the repository).
+* Tinyjpg - Tidy up images for readme and testing.
+* Kaggle - Dataset hosting site, including the dataset used for this project.
+* Ezgif - Converting images for testing to jpg.
+* TinyURL - tinyifing URL's for Readme.
+* Code Institute Repo - [Blank repo for cherry leaf project](https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves)
+
+### Libraries
+
+* Streamlit - For creating the interactive and user-friendly dashboard.
+* Pandas - For creating and saving dataframes.
+* Numpy - For converting to arrays.
+* Matplotlib - For plotting dataset distribution.
+* Seaborn - For creating confusion matrix.
+* Scikit-learn - For model evaluation.
+* TensorFlow - For building and training the model.
+* Keras - For creating the model hyperparamters
+* PIL (Python Imaging Library) - For handling image files.
+* Joblib (Python Library) - For handling .pkl files.
+
+## Credits and Acknowledgements
+
+* **Code Institute** - For supplying the learning environment that has lead me to this point.
 
 ### Content
 
-* https://plantwiseplusknowledgebank.org/doi/full/10.1079/pwkb.species.42639
-* https://www.canr.msu.edu/ipm/diseases/powdery_mildew_of_cherry?language_id=
-* https://www.wildfooduk.com/wild-plants/wild-cherry/
-* https://attra.ncat.org/publication/cherry-diseases/
-* https://extension.usu.edu/planthealth/ipm/notes_ag/fruit-powdery-mildew
+* A list of various sites I referred to for information about Powdery Mildew, in no particular order:
+  * "<https://plantwiseplusknowledgebank.org/doi/full/10.1079/pwkb.species.42639>"
+  * "<https://www.canr.msu.edu/ipm/diseases/powdery_mildew_of_cherry?language_id=>"
+  * "<https://www.wildfooduk.com/wild-plants/wild-cherry/>"
+  * "<https://attra.ncat.org/publication/cherry-diseases/>"
+  * "<https://extension.usu.edu/planthealth/ipm/notes_ag/fruit-powdery-mildew>"
+  * "<https://tinyurl.com/264vvz9c>"
 
 ### Media
 
-' The photos used on the home and sign-up page are from This Open-Source site.
-' [The images used for testing visualiser were taken from this site.](https://www.wildfooduk.com/wild-plants/wild-cherry/)
+* The images used for testing visualiser were taken from these site:
+  * [Wild food UK](https://www.wildfooduk.com/wild-plants/wild-cherry/)
+  * [WSU Tree Fruit](https://tinyurl.com/264vvz9c)
+  * [Tree guide UK](https://www.treeguideuk.co.uk/wild-cherry-tree-identification/)
+  * [Lawn Starter](https://www.lawnstarter.com/blog/tree-care/cherry-tree-diseases-how-treat/)
 
 ## Acknowledgements
 
 * My Grandmother who passed suddenly not long before I started this portion of the course
   * Edna Bellamy 1927 - 2024, Matamata, New Zealand
 * My partner for dealing with freak outs and frustration
+* Both of my mentors:
+  * Ronan - projects 1 to 4
+  * Rohit - project 5
