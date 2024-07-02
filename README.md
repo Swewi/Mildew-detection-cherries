@@ -275,6 +275,7 @@ In order to test the detector page I found several images on the internet and ra
 ## Credits and Acknowledgements
 
 * **Code Institute** - For supplying the learning environment that has lead me to this point.
+  * Also for the walkthrough project - Malaria Detector
 
 ### Content
 
@@ -288,7 +289,7 @@ In order to test the detector page I found several images on the internet and ra
 
 ### Media
 
-* The images used for testing visualiser were taken from these site:
+* The images used for testing visualiser were taken from these sites:
   * [Wild food UK](https://www.wildfooduk.com/wild-plants/wild-cherry/)
   * [WSU Tree Fruit](https://tinyurl.com/264vvz9c)
   * [Tree guide UK](https://www.treeguideuk.co.uk/wild-cherry-tree-identification/)
